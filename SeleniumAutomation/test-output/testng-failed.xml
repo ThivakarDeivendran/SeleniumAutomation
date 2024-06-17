@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite thread-count="2" parallel="methods" name="Failed suite [myfile]" guice-stage="DEVELOPMENT">
+  <parameter name="Password" value="VGhpdmFrYXIxMiFA"/>
+  <listeners>
+    <listener class-name="LearningTestNg.Listenersclass"/>
+  </listeners>
+  <test thread-count="2" parallel="methods" name="mytest(failed)">
     <classes>
-      <class name="LearningTestNg.anotation_2">
+      <class name="LearningTestNg.ParallelExecution">
         <methods>
-          <include name="dog"/>
-          <include name="apple_dup"/>
-          <include name="cat_dup"/>
+          <include name="intialProcessMethod3"/>
+          <include name="logoff"/>
+          <include name="login"/>
+          <include name="intialProcessMethod2"/>
+          <include name="intialProcessMethod1"/>
         </methods>
-      </class> <!-- LearningTestNg.anotation_2 -->
+      </class> <!-- LearningTestNg.ParallelExecution -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- mytest(failed) -->
+</suite> <!-- Failed suite [myfile] -->

@@ -8,15 +8,159 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">88</td><td></td><td></td></tr>
+<tr><th colspan="8">myfile</th></tr>
+<tr><td><a href="#t0">mytest</a></td><td class="num">0</td><td class="num attn">3</td><td class="num">0</td><td class="num">0</td><td class="num">314</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">LearningTestNg.anotation_3</td><td><a href="#m0">test1</a></td><td rowspan="3">1674484595832</td><td rowspan="3">3</td></tr><tr class="passedeven"><td><a href="#m1">test1</a></td></tr><tr class="passedeven"><td><a href="#m2">test1</a></td></tr><tr class="passedeven"><td><a href="#m3">test2</a></td><td rowspan="2">1674484595843</td><td rowspan="2">3</td></tr><tr class="passedeven"><td><a href="#m4">test2</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">myfile</th></tr></tbody><tbody id="t0"><tr><th colspan="4">mytest &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="2">LearningTestNg.ParallelExecution</td><td><a href="#m0">login</a></td><td rowspan="2">1699796410998</td><td rowspan="2">61</td></tr><tr class="failedeven"><td><a href="#m1">login</a></td></tr><tr><th colspan="4">mytest &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="4">LearningTestNg.ParallelExecution</td><td><a href="#m2">login</a></td><td rowspan="1">1699796411137</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m3">logoff</a></td><td rowspan="3">1699796411116</td><td rowspan="3">0</td></tr><tr class="skippedeven"><td><a href="#m4">logoff</a></td></tr><tr class="skippedeven"><td><a href="#m5">logoff</a></td></tr><tr><th colspan="4">mytest &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="3">LearningTestNg.ParallelExecution</td><td><a href="#m6">intialProcessMethod1</a></td><td rowspan="1">1699796411069</td><td rowspan="1">1</td></tr><tr class="skippedeven"><td><a href="#m7">intialProcessMethod2</a></td><td rowspan="1">1699796411071</td><td rowspan="1">1</td></tr><tr class="skippedeven"><td><a href="#m8">intialProcessMethod3</a></td><td rowspan="1">1699796411139</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">LearningTestNg.anotation_3#test1</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>rohith</td><td>vadivel</td><td>4</td><td>Railways</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">LearningTestNg.anotation_3#test1</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>manickam</td><td>alagarsamy</td><td>28</td><td>Dsp</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">LearningTestNg.anotation_3#test1</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>thivakar</td><td>deivendren</td><td>12</td><td>testing Engineer</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">LearningTestNg.anotation_3#test2</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>manickam</td><td>business</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">LearningTestNg.anotation_3#test2</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>thivakar</td><td>basketball</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>mytest</h2><h3 id="m0">LearningTestNg.ParallelExecution#login</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: org/apache/commons/lang3/SystemUtils
+	at io.github.bonigarcia.wdm.config.Config.defaultOsName(Config.java:370)
+	at io.github.bonigarcia.wdm.config.Config.&lt;init&gt;(Config.java:105)
+	at io.github.bonigarcia.wdm.WebDriverManager.&lt;init&gt;(WebDriverManager.java:227)
+	at io.github.bonigarcia.wdm.managers.ChromeDriverManager.&lt;init&gt;(ChromeDriverManager.java:57)
+	at io.github.bonigarcia.wdm.WebDriverManager.chromedriver(WebDriverManager.java:236)
+	at LearningTestNg.ParallelExecution.login(ParallelExecution.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">LearningTestNg.ParallelExecution#login</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: org/apache/commons/lang3/SystemUtils
+	at io.github.bonigarcia.wdm.config.Config.defaultOsName(Config.java:370)
+	at io.github.bonigarcia.wdm.config.Config.&lt;init&gt;(Config.java:105)
+	at io.github.bonigarcia.wdm.WebDriverManager.&lt;init&gt;(WebDriverManager.java:227)
+	at io.github.bonigarcia.wdm.managers.ChromeDriverManager.&lt;init&gt;(ChromeDriverManager.java:57)
+	at io.github.bonigarcia.wdm.WebDriverManager.chromedriver(WebDriverManager.java:236)
+	at LearningTestNg.ParallelExecution.login(ParallelExecution.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.lang3.SystemUtils
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 25 more
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">LearningTestNg.ParallelExecution#login</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">LearningTestNg.ParallelExecution#logoff</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">LearningTestNg.ParallelExecution#logoff</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">LearningTestNg.ParallelExecution#logoff</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">LearningTestNg.ParallelExecution#intialProcessMethod1</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: org/apache/commons/lang3/SystemUtils
+	at io.github.bonigarcia.wdm.config.Config.defaultOsName(Config.java:370)
+	at io.github.bonigarcia.wdm.config.Config.&lt;init&gt;(Config.java:105)
+	at io.github.bonigarcia.wdm.WebDriverManager.&lt;init&gt;(WebDriverManager.java:227)
+	at io.github.bonigarcia.wdm.managers.ChromeDriverManager.&lt;init&gt;(ChromeDriverManager.java:57)
+	at io.github.bonigarcia.wdm.WebDriverManager.chromedriver(WebDriverManager.java:236)
+	at LearningTestNg.ParallelExecution.login(ParallelExecution.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.lang3.SystemUtils
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 25 more
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">LearningTestNg.ParallelExecution#intialProcessMethod2</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: org/apache/commons/lang3/SystemUtils
+	at io.github.bonigarcia.wdm.config.Config.defaultOsName(Config.java:370)
+	at io.github.bonigarcia.wdm.config.Config.&lt;init&gt;(Config.java:105)
+	at io.github.bonigarcia.wdm.WebDriverManager.&lt;init&gt;(WebDriverManager.java:227)
+	at io.github.bonigarcia.wdm.managers.ChromeDriverManager.&lt;init&gt;(ChromeDriverManager.java:57)
+	at io.github.bonigarcia.wdm.WebDriverManager.chromedriver(WebDriverManager.java:236)
+	at LearningTestNg.ParallelExecution.login(ParallelExecution.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">LearningTestNg.ParallelExecution#intialProcessMethod3</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: org/apache/commons/lang3/SystemUtils
+	at io.github.bonigarcia.wdm.config.Config.defaultOsName(Config.java:370)
+	at io.github.bonigarcia.wdm.config.Config.&lt;init&gt;(Config.java:105)
+	at io.github.bonigarcia.wdm.WebDriverManager.&lt;init&gt;(WebDriverManager.java:227)
+	at io.github.bonigarcia.wdm.managers.ChromeDriverManager.&lt;init&gt;(ChromeDriverManager.java:57)
+	at io.github.bonigarcia.wdm.WebDriverManager.chromedriver(WebDriverManager.java:236)
+	at LearningTestNg.ParallelExecution.login(ParallelExecution.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

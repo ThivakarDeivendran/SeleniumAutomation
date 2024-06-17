@@ -31,7 +31,7 @@ public class testProject {
 	public static void main(String[] args) throws Throwable{
 		//fileInput();
 		//userID();
-		stringSplitFunctionMethod();
+		//stringSplitFunctionMethod();
 //		System.setProperty("webdriver.chrome.driver", "D:\\User\\Document\\Drivers\\chromedriver.exe");
 //		WebDriver drive =new ChromeDriver();
 //		drive.manage().window().maximize();

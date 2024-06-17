@@ -10,14 +10,14 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class ParallelExecution {
 	
 	public static ThreadLocal<WebDriver> dr =new ThreadLocal<WebDriver>();
-	
-	
 	@BeforeMethod
 	public void login() {
-		System.setProperty("webdriver.chrome.driver", "D:\\User\\Document\\Drivers\\chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
 		WebDriver driver =new ChromeDriver();
 		dr.set(driver);
 		dr.get().manage().window().maximize();
